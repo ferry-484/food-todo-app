@@ -8,7 +8,7 @@ function App() {
       <header className="App-header"></header>
       <Routes />
     </div>
-  );
+  );   
 }
 
 export default App;

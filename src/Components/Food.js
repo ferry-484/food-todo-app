@@ -39,25 +39,25 @@ function Food(props) {
     if (itemsData === null) {
       let obj = {};
       obj["food"] = radio;
-      obj["rating"] = dropDown;
+      obj["ratings"] = dropDown;
       obj["city"] = isChecked;
       items.push(obj);
       localStorage.setItem("data", JSON.stringify(items));
     } else {
       let obj = {};
       obj["food"] = radio;
-      obj["rating"] = dropDown;
+      obj["ratings"] = dropDown;
       obj["city"] = isChecked;
       itemsData.push(obj);
       localStorage.setItem("data", JSON.stringify(itemsData));
     }
+    alert("Added Successfully..");
   };
 
   return (
     <div>
       <form>
         <h1>Choice of Food..</h1>
-        
         <br />
         <label>Food: </label>
         <input

@@ -13,7 +13,7 @@ function Routes() {
           component={Next}
           render={(e, props) => <Next {...e} data={props} />}
         />
-
+   
         <Route
           exact={true}
           path="/" // always loads first
