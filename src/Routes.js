@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
-import Next from "./Components/Next";
-import Food from "./Components/Food";
+import Home from "./Components/Home";
+import User from "./Components/User";
 
 function Routes() {
   return (
@@ -9,16 +9,17 @@ function Routes() {
       <Switch>
         <Route
           exact={true}
-          path="/next"
-          component={Next}
-          render={(e, props) => <Next {...e} data={props} />}
+          path="/user"    
+          component={User}
+          render={(e, props) => <User {...e} data={props} />}
         />
-
+   
+   
         <Route
           exact={true}
           path="/" // always loads first
-          component={Food}
-          render={(e, props) => <Food {...e} data={props} />}
+          component={Home}
+          render={(e, props) => <Home {...e} data={props} />}
         />
       </Switch>
     </BrowserRouter>
